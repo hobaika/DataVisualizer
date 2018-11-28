@@ -1,0 +1,32 @@
+{% block tilte %}Your Enterprise Data{% endblock %}
+
+{% block content %} 
+	<h2>Enterprise Data</h2>
+
+	<table border="1">
+		<thead>
+			<tr>
+				<th>venueid</th>
+				<th>rating</th>
+				<th>price</th>
+				
+			</tr>
+		</thead>
+		<tbody>
+			{% for row in z %}
+			<tr>
+				{% for i in row %}
+				<td>{{ i }}</td>
+				{% endfor %}
+			</tr>
+			{% endfor %}	
+		</tbody>
+	</table>
+
+{% endblock %}
+
+
+
+
+
+
